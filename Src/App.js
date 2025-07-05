@@ -1,10 +1,10 @@
 import React from 'react';
-import Home from './pages/Home';  // 👈 Make sure it's lowercase 'pages' like in your folder
 
 function App() {
   return (
-    <div>
-      <Home />
+    <div className="min-h-screen flex flex-col items-center justify-center bg-gray-50">
+      <h1 className="text-4xl font-bold text-blue-600 mb-4">Welcome to AccountsPro</h1>
+      <p className="text-lg text-gray-700">Learn accounting in a simple, easy, and animated way.</p>
     </div>
   );
 }
