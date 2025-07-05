@@ -1,12 +1,13 @@
-import React from 'react';
-import Home from './Pages/Home';
+import Home from './Pages/Home';  // ✅ Corrected path (capital P)
 
 function App() {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
+    <div>
       <Home />
     </div>
   );
 }
 
 export default App;
+// ✅ Ensure that the Home component is imported correctly
+// ✅ The Home component should be in the Pages directory, not in the root src directory

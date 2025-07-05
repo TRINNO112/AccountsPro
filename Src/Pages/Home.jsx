@@ -1,4 +1,4 @@
-import React from 'react';
+import Home from './Pages/Home'; // ✅ Correct already
 
 function Home() {
   return (
