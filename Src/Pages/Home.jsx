@@ -1,4 +1,4 @@
-import Home from './Pages/Home'; // ✅ Correct already
+import React from 'react';
 
 function Home() {
   return (
@@ -10,3 +10,4 @@ function Home() {
 }
 
 export default Home;
+
