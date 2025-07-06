@@ -1,13 +1,12 @@
-import React from 'react';
+import React from 'react'
 
-function Home() {
+const Home = () => {
   return (
-    <div className="text-center">
-      <h1 className="text-4xl font-bold text-blue-600 mb-4">Welcome to AccountsPro</h1>
-      <p className="text-lg text-gray-700">Learn accounting in a simple, animated way.</p>
+    <div className="text-3xl font-bold text-center text-blue-500">
+      Welcome to AccountsPro!
     </div>
-  );
+  )
 }
 
-export default Home;
+export default Home
 
