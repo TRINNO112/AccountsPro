@@ -1,12 +1,7 @@
-import React from 'react'
-
-const Home = () => {
+export default function Home() {
   return (
-    <div className="text-3xl font-bold text-center text-blue-500">
+    <div className="text-2xl text-blue-600 font-bold">
       Welcome to AccountsPro!
     </div>
-  )
+  );
 }
-
-export default Home
-

@@ -1,23 +1,25 @@
-# Set path to portable Node.js folder
-$NodeFolder = "C:\Users\Amit Pathak\Documents\node-v22.17.0-win-x64\node-v22.17.0-win-x64"
-$NPM = "$NodeFolder\npm.cmd"
+# Set path to your portable Node.js
+$NodeExe = "C:\Users\Amit Pathak\Documents\node-v22.17.0-win-x64\node.exe"
+$NpmCmd = "C:\Users\Amit Pathak\Documents\node-v22.17.0-win-x64\npm.cmd"
+$ViteJs = ".\node_modules\vite\bin\vite.js"
 
-# Move to project directory
+# Change to current script directory
 Set-Location -Path $PSScriptRoot
 
-# Set environment
-$env:Path = "$NodeFolder;$env:Path"
+# Patch environment
+$env:Path = "C:\Users\Amit Pathak\Documents\node-v22.17.0-win-x64;$env:Path"
 $env:NODE_ENV = "development"
 Write-Host "Node.js environment patched."
 
-# Check and install dependencies
+# Install dependencies if missing
 if (-not (Test-Path "node_modules")) {
     Write-Host "Installing dependencies..."
-    & "$NPM" install
+    & "$NpmCmd" install
 } else {
     Write-Host "Dependencies already installed."
 }
 
-# Start the Vite dev server
+# Start Vite
 Write-Host "Starting Vite Dev Server..."
-& ".\node_modules\.bin\vite.cmd"
+& "$NodeExe" "$ViteJs"
+
